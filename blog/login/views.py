@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect
 from .models import User
 from .forms import UserForm
 
+def home(request):
+    return render(request, 'base.html')
+
 
 def users(request):
     users = User.objects.all()
