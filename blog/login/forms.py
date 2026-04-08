@@ -4,7 +4,7 @@ from .models import User
 class UserForm(forms.ModelForm):
     class Meta:
         model = User
-        fields = ['login', 'passsword', 'first_name', 'last_name', 'age']
+        fields = ['login', 'password', 'first_name', 'last_name', 'age']
         labels = {
             'login' : 'Логин',
             'passsword' : 'Пароль',
