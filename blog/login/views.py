@@ -5,7 +5,7 @@ from .forms import UserForm
 
 def users(request):
     users = User.objects.all()
-    return render (request(request, 'users.html', {'users': users}))
+    return render(request, 'users.html', {'users': users})
 
 
 def add_user(request):
